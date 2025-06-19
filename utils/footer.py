@@ -14,7 +14,8 @@ class footer_buttons(discord.ui.View):
   ## logging for snorlax leveling
   @discord.ui.button(label="Log", style=discord.ButtonStyle.blurple, emoji="✍️")
   async def button_logging_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
-    await interaction.response.send_message(f"Proud of you! {get_random_gif('good job')}")
+    ## to hide text
+    await interaction.response.send_message(f"[good job]({get_random_gif('good job')})")
     await interaction.followup.send("Logging it now (Logging functionality coming soon)", ephemeral=True)
 
   ##gemini
