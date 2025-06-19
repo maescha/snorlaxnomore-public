@@ -52,8 +52,11 @@ class MyClient(discord.Client):
       await return_options_msging(message)
     elif is_command(message, 'eq'):
       await specialized_eq_routine(message)
+      await message.channel.send(" ", view=footer_buttons())
     elif is_command(message, 'musc'):
       await specialized_musc_routine(message)
+      await message.channel.send(" ", view=footer_buttons())
+
 
 intents = discord.Intents.default()
 intents.message_content = True
