@@ -1,4 +1,4 @@
-# Snorlax No More<img alt="discord icon" src="https://img.icons8.com/?size=100&id=LOWwEDik1xs8&format=png&color=000000" width="25"/>
+# Snorlax No More <img alt="discord icon" src="https://img.icons8.com/?size=100&id=LOWwEDik1xs8&format=png&color=000000" width="25"/>
 
 <img align="left" alt="transparent image of Orange Unit Style Snorlax" src="https://res.cloudinary.com/dsns0avdz/image/upload/v1749435757/143-orangeunite_lbf1wg.png"> </img>
 
@@ -10,6 +10,8 @@
 - Saves youtube videos into an csv file and return them in a randomized order on command
 - Uses Gemini to recommend ways to improve your health and wellness according to information you share with Snorlax in a questionaire
 - Utilizes Gemini to provide quick tips and tricks to beat procrastination, low motivation, lack of discipline concerns
+
+<sub>This project was previously developed in a private repository with over 60 commits (started June 8 2025), now recreated for public access.</sub>
 
 ## APIs used
 
