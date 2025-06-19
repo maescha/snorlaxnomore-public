@@ -9,6 +9,7 @@ from commands.addVid import command_add
 from commands.playVid import command_play
 from commands.opt import return_options_msging
 from commands.equipment_routine import specialized_eq_routine
+from commands.muscle_routine import specialized_musc_routine
 
 from modals.tips import tip_modal_view
 
@@ -49,8 +50,10 @@ class MyClient(discord.Client):
       await message.channel.send("Click the button below to request specialized fitness tips from Snorlax:", view=tip_modal_view())
     elif is_command(message, 'opt'):
       await return_options_msging(message)
-    elif is_command(message, 'equ'):
+    elif is_command(message, 'eq'):
       await specialized_eq_routine(message)
+    elif is_command(message, 'musc'):
+      await specialized_musc_routine(message)
 
 intents = discord.Intents.default()
 intents.message_content = True
