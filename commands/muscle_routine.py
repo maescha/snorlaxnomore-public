@@ -78,7 +78,7 @@ def _process_raw_exercise_details(raw_exercise_dict: dict) -> dict | None:
       'value': instructions_text
    }
 
-## EQUIPMENT
+## MUSCLE
 async def get_exercise_embed_field_data_with_muscle(muscle_name: str):
   random_exercise_details = __get_specialized_musc_exercise(muscle_name)
   if not random_exercise_details or not isinstance(random_exercise_details, list):
@@ -104,33 +104,33 @@ async def specialized_musc_routine(message):
   if len(parts) < 2:
     await message.channel.send("Please provide a proper muscle name, e.g., `!mus ccardiovascular system`")
     return
-  equipment_name = parts[1].strip()
+  muscle_name = parts[1].strip()
 
 
 
   ##exercise body - looping same steps twice
   for i in range(2):
 
-    ## with the equipment
-    exc_field_data = await get_exercise_embed_field_data_with_muscle(equipment_name)
+    ## muscle specific
+    exc_field_data = await get_exercise_embed_field_data_with_muscle(muscle_name)
     if exc_field_data:
       embed.add_field(name=f'{exc_field_data["name"]}', value=f'{exc_field_data["value"]}')
     else:
-      embed.add_field(name=f'Equipment Exercise {i+1}:', value=f"Could not find an equipment-specific exercise for '{equipment_name}'.")
+      embed.add_field(name=f'Lets repeat that last one :):', value=f"Could not find any exercises targeting that specific muscle group'.")
 
-    ##THIRD EQUIPMENT
-    sec_exc_field_data = await get_exercise_embed_field_data_with_muscle(equipment_name)
+    ## another one
+    sec_exc_field_data = await get_exercise_embed_field_data_with_muscle(muscle_name)
     if sec_exc_field_data:
       embed.add_field(name=f'{sec_exc_field_data["name"]}', value=f'{sec_exc_field_data["value"]}', inline=False)
     else:
-      embed.add_field(name=f'Equipment Exercise {i+1}:', value=f"Could not find an equipment-specific exercise for '{equipment_name}'.")
+      embed.add_field(name=f'Lets repeat that last one :):', value=f"Could not find any exercises targeting that specific muscle group'.")
 
-    # NO equipment
+    # random exercise to shape it up
     another_no_eq_field_data = await get_exercise_embed_field_data_no_equipment()
     if another_no_eq_field_data:
       embed.add_field(name=f'{another_no_eq_field_data["name"]}', value=f'{another_no_eq_field_data["value"]}')
     else:
-      embed.add_field(name=f'Equipment Exercise {i+1}:', value=f"Let's repeat that :)'.")
+      embed.add_field(name=f'Lets repeat that last one :):', value=f"Could not find any exercises targeting that specific muscle group'.")
 
 
 
