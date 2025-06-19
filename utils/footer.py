@@ -1,5 +1,6 @@
 import discord
 from utils.gemini import generated_custom_content
+from utils.giphy import get_random_gif
 
 def _gemini_prompt(prompt):
   prompt_text='Generate a short encouraging message using Markdown and emojis in response to the user indicating that they had trouble completing the fitness exercuse due to '
@@ -13,7 +14,8 @@ class footer_buttons(discord.ui.View):
   ## logging for snorlax leveling
   @discord.ui.button(label="Log", style=discord.ButtonStyle.blurple, emoji="✍️")
   async def button_logging_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
-    await interaction.response.send_message("Great job! Logging it now (Logging functionality coming soon)", ephemeral=True)
+    await interaction.response.send_message(f"Proud of you! {get_random_gif('good job')}")
+    await interaction.followup.send("Logging it now (Logging functionality coming soon)", ephemeral=True)
 
   ##gemini
   @discord.ui.button(label="No motivation", style=discord.ButtonStyle.grey, emoji="😔")
