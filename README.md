@@ -11,7 +11,7 @@
 - Uses Gemini to recommend ways to improve your health and wellness according to information you share with Snorlax in a questionaire
 - Utilizes Gemini to provide quick tips and tricks to beat procrastination, low motivation, lack of discipline concerns
 
-<sub>This project was previously developed in a private repository with over 60 commits (started June 8 2025), now recreated for public access.</sub>
+<sub>This project was previously developed in a [private repository](https://github.com/maescha/snorlaxnomore) with over 60 commits (started June 8 2025), now recreated for public access.</sub>
 
 ## APIs used
 
