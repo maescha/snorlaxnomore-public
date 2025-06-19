@@ -25,4 +25,4 @@ class footer_buttons(discord.ui.View):
 
   @discord.ui.button(label="This is too much", style=discord.ButtonStyle.grey, emoji="🫨")
   async def button_three_callback(self, interaction: discord.Interaction, button: discord.ui.Button):
-    await interaction.response.send_message(f"{_gemini_prompt('exercise being too much for them. Encourage them to call !play for another exercise in the playlist and go at their pace, a little is a lot')}", ephemeral=True)
+    await interaction.response.send_message(f"{_gemini_prompt('exercise being too much for them. Encourage them to call !play for a random exercise routine that they can go at their own pace with, a little is a lot')}", ephemeral=True)
