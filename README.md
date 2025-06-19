@@ -4,12 +4,17 @@
 
 > It's time to get fit! 🏋️
 
-**Snorlax No More** is a discord bot created as a submission to the [June 2025 Codédex Monthly Challenge](https://www.codedex.io/community/monthly-challenge/4QHMd8GadBZtZbq6W1wD). It's functions include the following:
+**Snorlax No More** is a friendly, AI-powered Discord bot designed to help you shake off the _eepy_ and achieve your fitness goals! Created as a submission to the [June 2025 Codédex Monthly Challenge](https://www.codedex.io/community/monthly-challenge/4QHMd8GadBZtZbq6W1wD), this bot brings a fun Snorlax-themed approach to personal wellness, motivation, and exercise to any Discord server you're in.
 
-- Generate a random no-equipment exercise from the excercisedb library if certain keywords are triggered (No command necessary! Snorlax is always listening 👀)
-- Saves youtube videos into an csv file and return them in a randomized order on command
-- Uses Gemini to recommend ways to improve your health and wellness according to information you share with Snorlax in a questionaire
-- Utilizes Gemini to provide quick tips and tricks to beat procrastination, low motivation, lack of discipline concerns
+Snorlax may love sleep but he's wide awake when it comes to guiding your fitness journey! **Features include**:
+
+- 💬 Chat (Powered by Gemini): Engage in personalized conversations with Snorlax for fitness advice, answers to your exercise questions, and motivational support. He's always ready to chat about your wellness journey!
+- 💪 Dynamic Exercise Suggestions: Snorlax is always listening! Triggered by certain keywords, he will spontaneously suggest a random no-equipment exercise from the ExerciseDB API
+- 🎥 Curated Workout Playlist Management: Access a library of random workout videos stored in an .csv file created by **you** that you can also add to. Snorlax will return a random video on command, offering new routines and inspiration
+- 🩺 Personalized Health & Wellness Advice: Fill out a simple questionnaire and let Snorlax provide tailored recommendations to improve your specific health and wellness concerns
+- 🗓️ Randomized Workout Routines: Get a custom workout routine generated on the fly based on a specific equipment type (`!eq [equipment name]`) or muscle group (`!musc [muscle name]`)
+- 🚀 Motivation & Discipline Hacks: Struggling with procrastination or low motivation? Snorlax utilizes Gemini to offer quick, actionable tips and tricks to help you build discipline and stay on track
+- 👋 Friendly Greetings: Snorlax is polite! He'll greet you back, ready to start your fitness journey together
 
 <sub>This project was previously developed in a [private repository](https://github.com/maescha/snorlaxnomore) with over 60 commits (started June 8 2025), now recreated for public access.</sub>
 
