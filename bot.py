@@ -10,6 +10,7 @@ from commands.playVid import command_play
 from commands.opt import return_options_msging
 from commands.equipment_routine import specialized_eq_routine
 from commands.muscle_routine import specialized_musc_routine
+from commands.trainer import command_chat
 
 from modals.tips import tip_modal_view
 
@@ -36,8 +37,8 @@ class MyClient(discord.Client):
 
     randExercise_triggering_keywords = ('workout', 'working out', 'work out', 'fit', 'exercise', 'lazy', 'training', 'stronk', 'muscles', 'strong')
 
-    if is_command(message, 'hello'):
-      await command_hello(message)
+    if is_command(message, 'chat'):
+      await command_chat(message)
     elif any(keyword in message.content.lower() for keyword in randExercise_triggering_keywords):
       await command_randExercise(message)
       await message.channel.send("-# ٩>ᴗ<)و Did you do it? Let's log that :partying_face: ! Or did you have trouble getting started? :worried: (don't worry it's just between you and me)", view=footer_buttons())
@@ -56,6 +57,8 @@ class MyClient(discord.Client):
     elif is_command(message, 'musc'):
       await specialized_musc_routine(message)
       await message.channel.send(" ", view=footer_buttons())
+    elif is_command(message, 'hello'):
+      await command_hello(message)
 
 
 intents = discord.Intents.default()
