@@ -31,19 +31,14 @@ Snorlax may love sleep but he's wide awake when it comes to guiding your fitness
 - 🚀 **Motivation & Discipline Hacks**: Struggling with procrastination or low motivation? Snorlax utilizes Gemini to offer quick, actionable tips and tricks to help you build discipline and stay on track
 - 👋 **Friendly Greetings**: Snorlax is polite! He'll greet you back, ready to start your fitness journey together. Wake him up by calling `!hello`
 
-**Prefix Matching**
-You don't need to remember the exact command; partial matching works! For instance, !eq and !equipment will both trigger the same action
+**Prefix Matching** : You don't need to remember the exact command; partial matching works! For instance, !eq and !equipment will both trigger the same action
 
 ## APIs used
 
 - Discord API
 - [Exercisedb API](https://exercisedb-api.vercel.app/)
 - [Giphy API](https://developers.giphy.com/docs/api/#quick-start-guide)
-- Gemini API
-
-## LLM used
-
-- gemini-2.0-flash
+- Gemini API : gemini-2.0-flash
 
 ## Set Up
 
