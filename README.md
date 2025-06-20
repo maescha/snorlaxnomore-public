@@ -9,7 +9,7 @@
 Snorlax may love sleep but he's wide awake when it comes to guiding your fitness journey!
 
 **Showcase video:**
-[![Video](https://res.cloudinary.com/dsns0avdz/video/upload/v1750377593/___Snorlax_No_More_mpyyqx.mp4)]
+[![Watch the video](https://res.cloudinary.com/dsns0avdz/video/upload/v1750377593/___Snorlax_No_More_mpyyqx.mp4)]
 
 [Codédex Challenge Entry](https://www.codedex.io/community/monthly-challenge/submission/1jeQHezfVkohtN2dkT0d)
 
