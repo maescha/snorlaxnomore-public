@@ -11,6 +11,9 @@ Snorlax may love sleep but he's wide awake when it comes to guiding your fitness
 **Showcase video:**
 [Watch showcase video here](https://res.cloudinary.com/dsns0avdz/video/upload/v1750377593/___Snorlax_No_More_mpyyqx.mp4)
 
+[![[Project Showcase Video] Snorlax No More : AI Fitness/Wellness Discord Bot](https://res.cloudinary.com/dsns0avdz/image/upload/h_350/v1750399667/mpc-hc64_1SVVWA4XI8_qkj94q.png)](https://www.youtube.com/watch?v=tL5NHOhoWto "[Project Showcase Video] Snorlax No More : AI Fitness/Wellness Discord Bot")
+
+
 [Codédex Challenge Entry](https://www.codedex.io/community/monthly-challenge/submission/1jeQHezfVkohtN2dkT0d)
 
 <sub>This project was previously developed in a [private repository](https://github.com/maescha/snorlaxnomore) with over 60 commits (started June 8 2025), now recreated for public access.</sub>
