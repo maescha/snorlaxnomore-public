@@ -6,17 +6,30 @@
 
 **Snorlax No More** is a friendly, AI-powered Discord bot designed to help you shake off the _eepy_ and achieve your fitness goals! Created as a submission to the [June 2025 Codédex Monthly Challenge](https://www.codedex.io/community/monthly-challenge/4QHMd8GadBZtZbq6W1wD), this bot brings a fun Snorlax-themed approach to personal wellness, motivation, and exercise to any Discord server you're in.
 
-Snorlax may love sleep but he's wide awake when it comes to guiding your fitness journey! **Features include**:
+Snorlax may love sleep but he's wide awake when it comes to guiding your fitness journey!
 
-- 💬 Chat (Powered by Gemini): Engage in personalized conversations with Snorlax for fitness advice, answers to your exercise questions, and motivational support. He's always ready to chat about your wellness journey!
-- 💪 Dynamic Exercise Suggestions: Snorlax is always listening! Triggered by certain keywords, he will spontaneously suggest a random no-equipment exercise from the ExerciseDB API
-- 🎥 Curated Workout Playlist Management: Access a library of random workout videos stored in an .csv file created by **you** that you can also add to. Snorlax will return a random video on command, offering new routines and inspiration
-- 🩺 Personalized Health & Wellness Advice: Fill out a simple questionnaire and let Snorlax provide tailored recommendations to improve your specific health and wellness concerns
-- 🗓️ Randomized Workout Routines: Get a custom workout routine generated on the fly based on a specific equipment type (`!eq [equipment name]`) or muscle group (`!musc [muscle name]`)
-- 🚀 Motivation & Discipline Hacks: Struggling with procrastination or low motivation? Snorlax utilizes Gemini to offer quick, actionable tips and tricks to help you build discipline and stay on track
-- 👋 Friendly Greetings: Snorlax is polite! He'll greet you back, ready to start your fitness journey together
+**Showcase video:**
+[![Video](https://res.cloudinary.com/dsns0avdz/video/upload/v1750377593/___Snorlax_No_More_mpyyqx.mp4)]
+
+[Codédex Challenge Entry](https://www.codedex.io/community/monthly-challenge/submission/1jeQHezfVkohtN2dkT0d)
 
 <sub>This project was previously developed in a [private repository](https://github.com/maescha/snorlaxnomore) with over 60 commits (started June 8 2025), now recreated for public access.</sub>
+
+## Features
+
+- 💬 **Chat (Powered by Gemini)**: Engage in personalized conversations with Snorlax for fitness advice, answers to your exercise questions, and motivational support. He's always ready to chat about your wellness journey! Start by calling `!chat`
+- 💪 **Dynamic Exercise Suggestions**: Snorlax is always listening! Triggered by certain keywords, he will spontaneously suggest a random no-equipment exercise from the ExerciseDB API
+  > - Triggering keywords: workout, working out, work out, fit, exercise, lazy, training, stronk, muscles, strong
+- 🎥 **Curated Workout Playlist Management**: Access a library of random workout videos stored in an .csv file created by **you** that you can also add to. Snorlax will return a random video on command, offering new routines and inspiration
+  > - `!add` to add videos
+  > - `!play` to return random video
+- 🩺 **Personalized Health & Wellness Advice**: Fill out a simple questionnaire and let Snorlax provide tailored recommendations to improve your specific health and wellness concerns by going `!tip`
+- 🗓️ **Randomized Workout Routines**: Get a custom workout routine generated on the fly based on a specific equipment type (`!eq [equipment name]`) or muscle group (`!musc [muscle name]`)
+- 🚀 **Motivation & Discipline Hacks**: Struggling with procrastination or low motivation? Snorlax utilizes Gemini to offer quick, actionable tips and tricks to help you build discipline and stay on track
+- 👋 **Friendly Greetings**: Snorlax is polite! He'll greet you back, ready to start your fitness journey together. Wake him up by calling `!hello`
+
+**Prefix Matching**
+You don't need to remember the exact command; partial matching works! For instance, !eq and !equipment will both trigger the same action
 
 ## APIs used
 
@@ -72,8 +85,6 @@ GEMINIKEY=
    > You will know that you are successfully logged into your Discord server as the bot if you see the following message in your terminal:
 
    `Logged on as Snorlax No More#0512!`
-
-## Commands & Screenshots
 
 ## Future Improvements
 
