@@ -93,4 +93,4 @@ GEMINIKEY=
 
 - [ ] add logging functionality for excercised minutes
 - [ ] add Snorlax leveling in accordance to what is logged
-- [ ] add !help that logs all commands
+- [ ] add `!help` that logs all commands
